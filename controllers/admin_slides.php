@@ -73,7 +73,7 @@ class Admin_slides extends Admin_Controller
 	
 	public function delete($id = 0)
 	{
-		$this->streams->entries->delete_entry($id, 'slides', 'slides');
+		$this->streams->entries->delete_entry($id, 'slides', 'carousels');
 		$this->session->set_flashdata('error', 'Slide was deleted.');
 		redirect('admin/carousels/slides');
 	}
